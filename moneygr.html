@@ -40,7 +40,7 @@ input[type="text"]::placeholder {
                   padding-bottom: 3px;
               }
 #id01{
-  animation: animatezoom 0.6s;
+  animation: animatezoom1 1s;
 }
 #ds1{animation: animatezoom 2s;}
 #ds2{animation: animatezoom 2s;}
@@ -56,6 +56,14 @@ input[type="text"]::placeholder {
 @keyframes animatezoom {
   from { opacity:0;} 
   to { opacity: 1;}
+}
+@keyframes animatezoom1{
+from
+{padding-top:0px;
+   opacity:0;}
+to
+{padding-top:160px;
+  opacity:1;}
 }
   </style>
     <nav class="bg-slate-900 text-white flex flex-wrap justify-between bg-cover lg:space-x-11 md:space-x-9 sm:space-x-1  " >
@@ -189,15 +197,15 @@ input[type="text"]::placeholder {
           <div class="bg-slate-50 flex justify-start h-10" ></div>
         <nav class="bg-slate-900 text-white flex flex-wrap justify-between bg-cover lg:h-40 sm:h-96 lg:space-x-11 md:space-x-9 sm:space-x-1"   id="a20">
             <span class="text-xl flex items-center mx-11 font-bold">Follow us on:</span>
-            <ul class="px-28 py-4 flex flex-wrap space-x-11 justify-end">
-                <li  class="cursor-pointer text-xl hover:text-gray-600" ><a href="#" class="fa fa-facebook"> </a>Facebook</li>
-                <li  class="cursor-pointer text-xl hover:text-gray-600" ><a href="#" class="fa fa-instagram"> </a> Instagram</li>
-                <li  class="cursor-pointer text-xl hover:text-gray-600" ><a href="#" class="fa fa-twitter"> </a>Twitter</li>
-                <li  class="cursor-pointer text-xl hover:text-gray-600" ><a href="#" class="fa fa-google"> </a>Mail-us</li>
+            <ul class="px-28 py-4 flex flex-wrap space-x-20 justify-end">
+                <li  class="cursor-pointer text-2xl hover:text-gray-600" ><a href="#" class="fa fa-facebook">Facebook</a></li>
+                <li  class="cursor-pointer text-2xl hover:text-gray-600" ><a href="#" class="fa fa-instagram">Instagram</a></li>
+                <li  class="cursor-pointer text-2xl hover:text-gray-600" ><a href="#" class="fa fa-twitter">Twitter</a></li>
+                <li  class="cursor-pointer text-2xl hover:text-gray-600" ><a href="mailto: moneyger71@gmail.com" class="fa fa-google">Mail</a></li>
             </ul>
         </nav>
   
-        <div  class="flex justify-center lg:pl-96 md:pl-40 sm:pl-12 pt-40"style="display:none;top:0px;position:fixed;overflow-y: scroll !important;overflow-y:hidden;height:100%;width:100%; box-shadow: inset 0px 0px 600px 400px rgba(0, 0, 0, .7); " id="id01">
+        <div  class="flex justify-center pt-40 lg:pl-96 md:pl-40 sm:pl-12 "style="display:none;top:0px;position:fixed;overflow-y: scroll !important;overflow-y:hidden;height:100%;width:100%; box-shadow: inset 0px 0px 600px 400px rgba(0, 0, 0, .7); " id="id01">
             <div class="max-w-sm   overflow-hidden shadow-lg   rounded-xl bg-slate-200" style="overflow:hidden; " id="backme">
               <!-- <div class="flex justify-end"> -->
                 <button class="  justify-start" id="hui"><i class="fa fa-window-close " style="color:red"></i></button>
@@ -210,7 +218,7 @@ input[type="text"]::placeholder {
                 </div></div>
                 <div class="px-6 pt-1" style="padding-left:40px;"  >
                   <form>
-                      <input type="email" name="email" placeholder="&#xf0e0; Email"  class="border-2 rounded-lg active:border-black px-10 fa" id="login1" style="height:30px;visibility:hidden;width: 300px;z-index:1;display:none;">
+                      <input type="email" name="email" placeholder="&#xf0e0; Email"  class="border-2 rounded-lg active:border-black px-10 fa " id="login1" style="height:30px;visibility:hidden;width: 300px;z-index:1;display:none;">
                   </form>
               </div>
                 <div class="px-6 pt-0.5" style="padding-left:40px;"  >
